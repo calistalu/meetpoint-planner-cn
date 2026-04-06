@@ -27,12 +27,20 @@ The skill is designed to keep recommendations practical: balanced commute times,
   - per-person travel times
   - map markers and basic POI details
 
+
+## Trigger conditions
+
+- The user wants to plan a meetup in mainland China for 2-4 people.
+- The user cares about commute fairness (not just a single nearby place).
+- The user wants one-stop or multi-stage routing (for example: movie -> dinner -> game).
+- At least two participant origins are available or can be collected in chat.
+
 ## Required inputs
 
 Before planning, the following information must be known:
 
 1. Participant origins (2-4 people)
-2. Stage sequence (for example `movie -> dinner -> murder mystery game`)
+2. Stage sequence (for example `movie -> dinner -> board game`)
 3. City
 4. Transport mode (`transit`, `driving`, or `walking`)
 5. Maximum acceptable commute time per person
@@ -49,13 +57,17 @@ Before planning, the following information must be known:
 ## Dependencies
 
 - Python 3.10+
-- AMap Web Service key (`AMAP_WEB_KEY` or `AMAP_API_KEY`)
+- AMap(高德地图) Web Service key (`AMAP_WEB_KEY` or `AMAP_API_KEY`)
 - Optional AMap JS key for interactive map in HTML (`AMAP_JS_KEY`)
 - Optional JS security code (`AMAP_JS_SECURITY_CODE`)
 
 ## Quick start
 
-Set your API keys:
+1. Register on the AMap Open Platform and create your API keys:
+   - (Open Platform)[https://lbs.amap.com/]
+   - (Key Console)[https://console.amap.com/dev/key/app/]
+
+2. Set your API keys:
 
 ```bash
 export AMAP_WEB_KEY="your_web_key"
@@ -99,7 +111,6 @@ Run `--interactive` for a guided terminal wizard.
 
 - Plan A usually keeps commute differences smaller.
 - Plan B usually keeps stage-to-stage movement shorter.
-- If transit routing fails for a leg, the planner falls back to driving time for that evaluation.
 - The final choices still benefit from a quick manual check (opening hours, booking, and real-time crowd level).
 
 ## Recommended release positioning
