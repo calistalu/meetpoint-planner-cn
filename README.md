@@ -27,6 +27,9 @@ The skill is designed to keep recommendations practical: balanced commute times,
   - per-person travel times
   - map markers and basic POI details
 
+![img1](assets/img1.png)
+
+![img2](assets/img2.png)
 
 ## Trigger conditions
 
@@ -120,4 +123,3 @@ Use this skill when users need:
 - fair meetup planning for 2-4 people in China
 - multi-stop routes (not just one POI)
 - actionable alternatives at each stage for manual fine-tuning
-
