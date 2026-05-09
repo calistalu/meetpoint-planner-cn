@@ -1,4 +1,5 @@
 # Meetpoint Planner CN
+[Demo Video (CN)](【Meetpoint-planner Skill 讲解Demo-哔哩哔哩】 https://b23.tv/zzE13yD)
 
 Have you ever tried to meet friends in a big city and spent more time choosing a place than actually enjoying the meetup?
 Have you ever felt that one person always travels much longer than everyone else?
